@@ -1,0 +1,8 @@
+- job-template:
+    name: '{name}-macros-job'
+    defaults: macros
+
+    builders:
+      - hello-world
+      - success:
+          successval: '{successval}'

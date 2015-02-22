@@ -1,0 +1,23 @@
+- wrapper:
+    name: build-timeout
+    wrappers:
+      - timeout:
+          timeout: '{timeout}'
+          timeout-var: 'BUILD_TIMEOUT'
+          fail: true
+
+- builder:
+    name: hello-world
+    builders:
+      - shell: |
+          echo "hello"
+      - shell: |
+          echo "world"
+
+- builder:
+    name: success
+    builders:
+      - shell: |
+          set -xe
+          echo "{successval}.SUCCESS!"
+          true

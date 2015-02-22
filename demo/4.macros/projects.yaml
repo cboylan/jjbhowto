@@ -1,0 +1,5 @@
+- project:
+    name: six
+    successval: 6
+    jobs:
+      - '{name}-macros-job'

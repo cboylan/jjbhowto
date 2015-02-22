@@ -8,8 +8,6 @@
     concurrent: true
 
     wrappers:
-      - timeout:
+      - build-timeout:
           timeout: 30
-          timeout-var: BUILD_TIMEOUT
-          fail: true
       - timestamps
