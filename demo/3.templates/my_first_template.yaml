@@ -7,5 +7,5 @@
           set -xe
           echo "{successval}.SUCCESS!"
           # Escaping brackets
-          echo ${{DATE}}
+          echo ${{PWD}}
           true
