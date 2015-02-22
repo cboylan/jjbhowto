@@ -21,6 +21,7 @@ Via the jenkins webui (ugh) install:
 timestamper plugin
 Build-timeout plugin
 SCP plugin
+Git plugin
 
 Probably want another image commit:
 `sudo docker commit jenkins cboylan/jenkinswithtestuser`
