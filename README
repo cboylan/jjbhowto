@@ -9,3 +9,9 @@ Install JJB into that venv (note we install from source):
 `venv/bin/pip install /path/to/jjb/repo`
 
 Edit jjb.ini to match the user info in your Jenkins server.
+
+Now you can add jobs, to see the xml that would be used:
+`venv/bin/jenkins-jobs --conf jjb.ini test demo/1.first_job`
+
+To upload this job to jenkins:
+`venv/bin/jenkins-jobs --conf jjb.ini update demo/1.first_job`
