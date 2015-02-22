@@ -1,0 +1,8 @@
+- job:
+    name: second-job
+
+    builders:
+      - shell: |
+          set -xe
+          echo "SUCCESS!"
+          true
