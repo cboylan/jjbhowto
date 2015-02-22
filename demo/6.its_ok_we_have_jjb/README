@@ -1,4 +1,4 @@
 File here because git.
 
 Rebuild the world with:
-`jenkins-jobs --conf jjb.ini update --recursive demo`
+`venv/bin/jenkins-jobs --conf jjb.ini update --recursive demo`
