@@ -1,0 +1,12 @@
+- job-group:
+    name: demo-jobs
+    jobs:
+      - '{name}-job'
+      - '{name}-macros-job':
+          successval: 'somearbitrarystring'
+
+- project:
+    name: seven
+    successval: 7
+    jobs:
+      - demo-jobs
