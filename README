@@ -15,3 +15,10 @@ Now you can add jobs, to see the xml that would be used:
 
 To upload this job to jenkins:
 `venv/bin/jenkins-jobs --conf jjb.ini update demo/1.first_job`
+
+Clark's Helpful Disclaimer:
+We don't use Jenkins in very complicated ways. Uncomplicated Jenkins
+Mostly scales, is easy to debug, and easy to modify/fix without getting
+hip deep in Java. So you may find that my ideas around what you should
+do with Jenkins don't line up with yours. But thats OK! because JJB
+is happy to support Jenkins not just my Jenkins.
