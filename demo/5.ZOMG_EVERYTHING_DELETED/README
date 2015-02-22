@@ -1,0 +1,4 @@
+File here because git.
+
+Run something like this to delete everything:
+`venv/bin/jenkins-jobs --conf jjb.ini delete-all`
