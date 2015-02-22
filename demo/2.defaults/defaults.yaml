@@ -1,5 +1,6 @@
 - defaults:
-    name: global
+    # If this name is 'global' all jobs use it by default
+    name: defaults
     description: |
       This job is managed by JJB and will be overwritten.
 

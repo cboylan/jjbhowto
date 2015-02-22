@@ -1,5 +1,5 @@
 - defaults:
-    name: global
+    name: macros
     description: |
       This job is managed by JJB and will be overwritten.
 

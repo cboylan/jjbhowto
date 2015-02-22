@@ -1,8 +1,17 @@
 - job:
     name: second-job
+    defaults: defaults
 
     builders:
       - shell: |
           set -xe
-          echo "SUCCESS!"
+          echo "2.SUCCESS!"
+          true
+- job:
+    name: third-job
+
+    builders:
+      - shell: |
+          set -xe
+          echo "3.SUCCESS!"
           true
