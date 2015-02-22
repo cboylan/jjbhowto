@@ -15,3 +15,12 @@ Jenkins to be in.
 
 Delete old container use new base images (just to be sure its working)
 `sudo docker rm jenkins && sudo docker run --name jenkins -d -p 8080:8080 cboylan/jenkinswithtestuser /bin/sh -c '/etc/init.d/jenkins start && sleep infinity'`
+
+At some point you probably want some plugins to make Jenkins more useful.
+Via the jenkins webui (ugh) install:
+timestamper plugin
+Build-timeout plugin
+SCP plugin
+
+Probably want another image commit:
+`sudo docker commit jenkins cboylan/jenkinswithtestuser`
