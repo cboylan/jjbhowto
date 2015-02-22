@@ -1,0 +1,12 @@
+- project:
+    name: four
+    successval: '4'
+    jobs:
+      - '{name}-job'
+
+- project:
+    name: five
+    # Integers are coerced
+    successval: 5
+    jobs:
+      - '{name}-job'

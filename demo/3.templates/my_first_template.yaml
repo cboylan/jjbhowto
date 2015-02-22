@@ -1,0 +1,11 @@
+- job-template:
+    name: '{name}-job'
+    defaults: templates
+
+    builders:
+      - shell: |
+          set -xe
+          echo "{successval}.SUCCESS!"
+          # Escaping brackets
+          echo ${{DATE}}
+          true
