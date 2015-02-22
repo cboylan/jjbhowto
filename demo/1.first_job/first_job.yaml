@@ -1,0 +1,21 @@
+- job:
+    name: first-job
+    description: |
+      This job is managed by JJB and will be overwritten.
+
+      Do not edit this job through the web.
+    project-type: freestyle
+    concurrent: true
+
+    wrappers:
+      - timeout:
+          timeout: 30
+          timeout-var: BUILD_TIMEOUT
+          fail: true
+      - timestamps
+
+    builders:
+      - shell: |
+          set -xe
+          echo "SUCCESS!"
+          true
