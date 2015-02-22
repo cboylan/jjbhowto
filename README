@@ -1,0 +1,11 @@
+Spin up a Jenkins server using the directions in the dockerstuff
+dir. Should run a simple server for testing/demo purposes in a
+docker container.
+
+Create a virtualenv to install JJB into:
+`virtualenv venv`
+
+Install JJB into that venv (note we install from source):
+`venv/bin/pip install /path/to/jjb/repo`
+
+Edit jjb.ini to match the user info in your Jenkins server.
