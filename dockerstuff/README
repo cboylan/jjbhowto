@@ -1,0 +1,17 @@
+Build Docker image with:
+`sudo docker build -t cboylan/simplejenkins .`
+
+Run Jenkins with:
+`sudo docker run --name jenkins -d -p 8080:8080 cboylan/simplejenkins /bin/sh -c '/etc/init.d/jenkins start && sleep infinity'`
+
+Now connect to localhost:8080 with a web browser to start Jenkinsing.
+
+To setup simple accounts follow directions at:
+https://wiki.jenkins-ci.org/display/JENKINS/Standard+Security+Setup
+
+Once done save current image state as this is a more useful state for
+Jenkins to be in.
+`sudo docker commit jenkins cboylan/jenkinswithtestuser`
+
+Delete old container use new base images (just to be sure its working)
+`sudo docker rm jenkins && sudo docker run --name jenkins -d -p 8080:8080 cboylan/jenkinswithtestuser /bin/sh -c '/etc/init.d/jenkins start && sleep infinity'`
