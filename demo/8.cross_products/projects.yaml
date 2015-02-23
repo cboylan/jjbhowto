@@ -1,0 +1,15 @@
+# Who needs jenkins matrix jobs?
+- project:
+    name: eight
+    python:
+      - python2.6
+      - python2.7
+      - python3.3
+      - python3.4
+    node:
+      - precise
+      - trusty
+      - centos6
+      - centos7
+    jobs:
+      - '{name}-{python}-{node}'
