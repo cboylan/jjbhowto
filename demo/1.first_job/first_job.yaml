@@ -7,6 +7,7 @@
       Do not edit this job through the web.
     project-type: freestyle
     concurrent: true
+    node: master
 
     wrappers:
       - timeout:
